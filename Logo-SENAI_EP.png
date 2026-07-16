@@ -1,0 +1,62 @@
+# Site Pedagógico — Serra Catarinense (refatoração)
+
+Reconstrução do site pedagógico da Serra Catarinense em **HTML e CSS**, feita pela
+turma de **Técnico em Desenvolvimento de Sistemas** — SENAI Lages.
+Cada grupo é responsável por **uma página** e trabalha em **sua própria branch**.
+Ao final, todas as branches são unidas na `main` pelo professor.
+
+## Estrutura do repositório
+
+```
+/
+├── modelo-pagina.html             Modelo em branco — cada grupo copia este arquivo
+├── estilo-comum.css               Design system compartilhado — NÃO EDITAR
+├── menu.js                        Comportamento do menu — NÃO EDITAR
+├── favicon.ico
+├── assets/                        Logos e ícones (NÃO EDITAR)
+│   ├── Logo-SENAI_EP.png          Logo do cabeçalho
+│   ├── Logo-S.png                 Logo do rodapé
+│   ├── favicon-32.png
+│   └── apple-touch-icon.png
+├── img/                           Imagens das páginas (cada grupo coloca as suas)
+└── docs/
+    ├── ESPECIFICACAO-VISUAL.md     O "contrato": cores, fontes e componentes prontos
+    └── GUIA-GIT-ALUNO.md           Passo a passo de git/GitHub para iniciantes
+```
+
+## Páginas e grupos
+
+| Arquivo (cada grupo cria o seu) | Página | Grupo | Branch |
+|---|---|---|---|
+| `g1-equipe.html` | Equipe e Unidades | Grupo 1 | `grupo-1` |
+| `g2-aprendizagem-industrial.html` | Cursos de Aprendizagem Industrial | Grupo 2 | `grupo-2` |
+| `g3-cursos-tecnicos.html` | Cursos Técnicos | Grupo 3 | `grupo-3` |
+| `g4-materiais-apoio.html` | Materiais de Apoio | Grupo 4 | `grupo-4` |
+| `g5-cursos-profissionais.html` | Cursos Profissionais | Grupo 5 | `grupo-5` |
+| `g6-treinamentos.html` | Treinamentos | Grupo 6 | `grupo-6` |
+| `g7-ppps-regulamento.html` | PPPs e Regulamento | Grupo 7 | `grupo-7` |
+
+Os **links e imagens** de cada página estão na planilha
+`SITE_PEDAGOGICO_Divisao_Grupos.xlsx` (uma aba por grupo).
+
+## Regras de ouro
+
+1. **Não edite** `estilo-comum.css`, `menu.js`, a pasta `assets/`, nem o cabeçalho/rodapé.
+2. Trabalhe **apenas no seu arquivo** `gN-....html` e nas **suas imagens** em `img/`.
+3. Sempre na **sua branch**. Nunca faça commit direto na `main`.
+4. Toda imagem precisa de `alt`; todo link precisa de texto que diga para onde vai.
+
+## Início rápido (aluno)
+
+```bash
+git clone <url-do-repositorio>
+cd site-pedagogico
+git checkout grupo-N          # a branch do seu grupo
+cp modelo-pagina.html gN-nome.html   # crie o arquivo do seu grupo
+# edite gN-nome.html e adicione as imagens em img/
+git add .
+git commit -m "Grupo N: primeira versão da página"
+git push
+```
+
+Detalhes em [`docs/GUIA-GIT-ALUNO.md`](docs/GUIA-GIT-ALUNO.md).
