@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Início · Site Pedagógico — Serra Catarinense</title>
+
+  <!-- ✏️ TODO 1: troque o título abaixo pelo nome da SUA página -->
+  <title>NOME DA SUA PÁGINA · Site Pedagógico — Serra Catarinense</title>
+
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -14,7 +17,9 @@
 </head>
 <body>
 
-<!-- ===================== CABEÇALHO (NÃO ALTERAR) ===================== -->
+<!-- ============================================================= -->
+<!-- CABEÇALHO — NÃO ALTERE (só marque a SUA aba com class="active") -->
+<!-- ============================================================= -->
 <header class="site-header">
   <div class="header-top">
     <div class="header-top-inner">
@@ -36,7 +41,8 @@
     <div class="header-nav-inner">
       <nav class="main-nav" aria-label="Menu principal">
         <ul>
-          <li><a href="index.html" class="active">Início</a></li>
+          <!-- ✏️ TODO 2: adicione class="active" NO SEU item do menu -->
+          <li><a href="index.html">Início</a></li>
           <li><a href="g1-equipe.html">Equipe e Unidades</a></li>
           <li><a href="g2-aprendizagem-industrial.html">Aprendizagem Industrial</a></li>
           <li><a href="g3-cursos-tecnicos.html">Cursos Técnicos</a></li>
@@ -50,30 +56,38 @@
   </div>
 </header>
 
-<!-- ===================== CONTEÚDO DA HOME ===================== -->
+<!-- ============================================================= -->
+<!-- CONTEÚDO DA PÁGINA — É AQUI QUE O SEU GRUPO TRABALHA           -->
+<!-- ============================================================= -->
 <main class="page">
-  <div class="hero">
-    <span class="eyebrow">Educação Profissional · SENAI</span>
-    <h1>Recursos pedagógicos da Serra Catarinense</h1>
-    <p>Ponto de partida para docentes: equipe, cursos, materiais de apoio e regulamentos das unidades de Lages, Otacílio Costa e Correia Pinto.</p>
-  </div>
 
-  <div class="section-h">Navegue pelas seções</div>
-  <p style="color:var(--gray-60);margin-bottom:1rem;font-size:.9rem">
-    Cada seção é construída por um grupo. Os links ficam ativos conforme as páginas são entregues e validadas.
-  </p>
-  <div class="grid cols-4">
-    <a class="sec-card" href="g1-equipe.html"><span class="n">01</span><h3>Equipe e Unidades</h3><p>Quem somos e onde estamos na Serra Catarinense.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g2-aprendizagem-industrial.html"><span class="n">02</span><h3>Aprendizagem Industrial</h3><p>Planos de curso e UCs de desenvolvimento socioprofissional.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g3-cursos-tecnicos.html"><span class="n">03</span><h3>Cursos Técnicos</h3><p>Itinerários, provas de referência e ferramentas SAEP.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g4-materiais-apoio.html"><span class="n">04</span><h3>Materiais de Apoio</h3><p>Modelos, taxonomia de Bloom e ferramentas de IA.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g5-cursos-profissionais.html"><span class="n">05</span><h3>Cursos Profissionais</h3><p>Planos de aula e situações de aprendizagem.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g6-treinamentos.html"><span class="n">06</span><h3>Treinamentos</h3><p>Capacitações e momentos pedagógicos.</p><span class="go">Acessar seção</span></a>
-    <a class="sec-card" href="g7-ppps-regulamento.html"><span class="n">07</span><h3>PPPs e Regulamento</h3><p>Projetos pedagógicos e regimento escolar.</p><span class="go">Acessar seção</span></a>
-  </div>
+  <!-- ✏️ TODO 3: troque pelo caminho e título da sua página -->
+  <div class="crumb">Início › Nome da sua seção</div>
+  <h1 class="page-title">Nome da sua seção</h1>
+  <p class="page-lead">Escreva aqui uma frase curta explicando o que a página oferece.</p>
+
+  <!-- ✏️ TODO 4: monte o conteúdo usando UM dos modelos abaixo.
+       Copie o modelo que combina com a sua página a partir do
+       arquivo docs/ESPECIFICACAO-VISUAL.md (seção "Componentes").
+       Modelos disponíveis:
+         • Grade de cards  (cursos)      -> use <div class="grid cols-3"> + .course-card
+         • Lista de links  (materiais)   -> use .link-block + .link-list
+         • Unidades        (equipe)      -> use .unit-grid + .unit-card
+  -->
+
+  <div class="section-h">Título de uma seção</div>
+  <p>Comece a construir aqui. Lembre-se:</p>
+  <ul style="margin:.6rem 0 0 1.2rem;color:var(--gray-60)">
+    <li>Imagens vão na pasta <code>img/</code> e SEMPRE com <code>alt</code> descritivo.</li>
+    <li>O texto do link deve dizer para onde ele leva (nada de "clique aqui").</li>
+    <li>Use as classes do <code>estilo-comum.css</code> — não invente cores nem fontes.</li>
+  </ul>
+
 </main>
 
-<!-- ===================== RODAPÉ (NÃO ALTERAR) ===================== -->
+<!-- ============================================================= -->
+<!-- RODAPÉ — NÃO ALTERE                                            -->
+<!-- ============================================================= -->
 <footer class="site-footer">
   <div class="footer-inner">
     <span class="f-left">

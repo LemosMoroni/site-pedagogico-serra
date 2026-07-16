@@ -1,0 +1,177 @@
+/* =====================================================================
+   ESTILO-COMUM.CSS  —  Design system compartilhado do Site Pedagógico
+   Serra Catarinense · SENAI
+   ---------------------------------------------------------------------
+   ⚠️  ESTE ARQUIVO É COMPARTILHADO. Nenhum grupo deve editá-lo.
+       O CSS específico da sua página vai em um <style> no seu próprio
+       arquivo .html, ou num arquivo gN.css separado.
+   ===================================================================== */
+
+:root{
+  /* Cores oficiais (do site de referência) */
+  --blue:#003087; --blue-dark:#002166; --blue-mid:#004BB5;
+  --blue-light:#E8EEF8; --blue-xlight:#F0F4FB;
+  --orange:#F47920; --orange-dark:#D4620A; --orange-light:#FEF3EA;
+  --charcoal:#1C1C1E; --gray-80:#3A3A3C; --gray-60:#636366;
+  --gray-40:#AEAEB2; --gray-20:#E5E5EA; --gray-10:#F2F2F7; --white:#fff;
+  /* Sombras e raios */
+  --shadow-sm:0 1px 4px rgba(0,0,0,.07);
+  --shadow-md:0 4px 20px rgba(0,0,0,.09);
+  --r-sm:8px; --r-md:12px; --r-lg:18px;
+  /* Tipografia */
+  --disp:'Barlow Condensed',sans-serif; --body:'Barlow',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--charcoal);background:var(--gray-10);line-height:1.55}
+a{color:inherit}
+img{max-width:100%;display:block}
+
+/* =========================================================
+   HEADER em duas linhas — IDÊNTICO EM TODAS AS PÁGINAS
+   ========================================================= */
+.site-header{position:sticky;top:0;z-index:50;box-shadow:var(--shadow-md)}
+/* Linha 1 — logo + busca */
+.header-top{background:var(--blue);color:#fff}
+.header-top-inner{max-width:1160px;margin:0 auto;padding:.6rem 1.25rem;
+  display:flex;align-items:center;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff;flex-shrink:0}
+.brand img{height:44px;width:auto;background:#fff;border-radius:6px;padding:4px 8px}
+.brand .b-title{font-family:var(--disp);font-weight:700;font-size:1.2rem;
+  line-height:1;letter-spacing:.3px;text-transform:uppercase}
+.brand .b-sub{font-size:.72rem;color:#B9C7E6;letter-spacing:.5px;text-transform:uppercase}
+/* Campo de busca */
+.search{margin-left:auto;display:flex;align-items:center;background:#fff;
+  border-radius:99px;padding:.15rem;box-shadow:var(--shadow-sm);width:min(360px,42vw)}
+.search input{border:none;outline:none;flex:1;min-width:0;background:transparent;
+  font-family:var(--body);font-size:.9rem;color:var(--charcoal);padding:.35rem .9rem}
+.search input::placeholder{color:var(--gray-40)}
+.search button{border:none;cursor:pointer;background:var(--orange);color:#fff;
+  width:36px;height:36px;border-radius:99px;font-size:1rem;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;transition:.15s}
+.search button:hover{background:var(--orange-dark)}
+.search input:focus-visible,.search button:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.nav-toggle{display:none;background:none;border:1.5px solid rgba(255,255,255,.5);
+  color:#fff;border-radius:6px;padding:.35rem .55rem;font-size:1.2rem;cursor:pointer;flex-shrink:0}
+/* Linha 2 — menu */
+.header-nav{background:var(--blue-dark)}
+.header-nav-inner{max-width:1160px;margin:0 auto;padding:0 1.25rem}
+.main-nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:.1rem}
+.main-nav a{display:block;font-family:var(--disp);font-weight:600;text-transform:uppercase;
+  font-size:.84rem;letter-spacing:.5px;color:#D7E0F2;text-decoration:none;
+  padding:.7rem .85rem;border-bottom:3px solid transparent;transition:.15s}
+.main-nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.main-nav a.active{color:#fff;border-bottom-color:var(--orange)}
+.main-nav a:focus-visible{outline:2px solid var(--orange);outline-offset:-2px}
+
+/* =========================================================
+   ESTRUTURA DE CONTEÚDO (miolo de cada página)
+   ========================================================= */
+.page{max-width:1160px;margin:0 auto;padding:2rem 1.25rem 3rem}
+.crumb{font-family:var(--disp);text-transform:uppercase;letter-spacing:1px;
+  font-size:.78rem;color:var(--orange-dark);font-weight:600;margin-bottom:.4rem}
+.page-title{font-family:var(--disp);font-weight:700;text-transform:uppercase;
+  font-size:2rem;line-height:1.05;color:var(--blue);margin-bottom:.4rem}
+.page-title::after{content:"";display:block;width:64px;height:4px;background:var(--orange);
+  border-radius:2px;margin-top:.6rem}
+.page-lead{color:var(--gray-60);max-width:60ch;margin-bottom:1.8rem}
+.section-h{font-family:var(--disp);text-transform:uppercase;font-weight:600;letter-spacing:.5px;
+  font-size:1.15rem;color:var(--blue-dark);margin:2rem 0 .9rem;
+  padding-left:.7rem;border-left:4px solid var(--orange)}
+
+/* Hero (usado na Home) */
+.hero{background:linear-gradient(135deg,var(--blue) 0%,var(--blue-dark) 100%);color:#fff;
+  border-radius:var(--r-lg);padding:2.6rem 2rem;margin-bottom:2.2rem;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;
+  background:radial-gradient(circle,rgba(244,121,32,.35),transparent 70%)}
+.hero .eyebrow{font-family:var(--disp);text-transform:uppercase;letter-spacing:2px;
+  font-size:.8rem;color:var(--orange);font-weight:600}
+.hero h1{font-family:var(--disp);text-transform:uppercase;font-weight:700;
+  font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.02;margin:.3rem 0 .7rem;max-width:18ch}
+.hero p{color:#C7D3EC;max-width:52ch}
+
+/* Grids */
+.grid{display:grid;gap:1.1rem}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.grid.cols-4{grid-template-columns:repeat(4,1fr)}
+
+/* Card de seção (Home) */
+.sec-card{background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-sm);
+  padding:1.3rem;text-decoration:none;color:inherit;border:1px solid var(--gray-20);
+  border-top:4px solid var(--blue-mid);transition:.18s;display:flex;flex-direction:column;gap:.4rem}
+.sec-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-top-color:var(--orange)}
+.sec-card .n{font-family:var(--disp);font-size:.8rem;color:var(--gray-40);font-weight:600}
+.sec-card h3{font-family:var(--disp);text-transform:uppercase;color:var(--blue);font-size:1.05rem;line-height:1.1}
+.sec-card p{font-size:.85rem;color:var(--gray-60)}
+.sec-card .go{margin-top:auto;font-family:var(--disp);font-weight:600;text-transform:uppercase;
+  font-size:.78rem;color:var(--orange-dark)}
+
+/* Card de curso (template "cards") */
+.course-card{background:#fff;border-radius:var(--r-md);overflow:hidden;
+  box-shadow:var(--shadow-sm);border:1px solid var(--gray-20);display:flex;flex-direction:column}
+.course-card img,.course-card .ph-img{width:100%;height:150px;object-fit:cover}
+.course-card .cc-body{padding:1rem;display:flex;flex-direction:column;gap:.7rem;flex:1}
+.course-card h3{font-family:var(--disp);text-transform:uppercase;color:var(--blue-dark);font-size:1rem;line-height:1.12}
+
+/* Botão */
+.btn{align-self:flex-start;margin-top:auto;background:var(--orange);color:#fff;
+  text-decoration:none;font-family:var(--disp);font-weight:600;text-transform:uppercase;
+  letter-spacing:.4px;font-size:.82rem;padding:.5rem .95rem;border-radius:var(--r-sm);transition:.15s}
+.btn:hover{background:var(--orange-dark)}
+.btn:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+
+/* Lista de links (template "links") */
+.link-block{background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-sm);
+  border:1px solid var(--gray-20);padding:1.2rem 1.4rem;margin-bottom:1.1rem}
+.link-block h3{font-family:var(--disp);text-transform:uppercase;color:var(--blue);
+  font-size:1.05rem;margin-bottom:.7rem;padding-bottom:.5rem;border-bottom:1px solid var(--gray-20)}
+.link-list{list-style:none;display:grid;gap:.5rem}
+.link-list a{display:flex;align-items:center;gap:.6rem;text-decoration:none;
+  padding:.55rem .7rem;border-radius:var(--r-sm);background:var(--blue-xlight);
+  color:var(--blue-dark);font-weight:500;transition:.15s}
+.link-list a::before{content:"→";color:var(--orange);font-weight:700;flex-shrink:0}
+.link-list a:hover{background:var(--blue-light);transform:translateX(3px)}
+.link-list a:focus-visible{outline:2px solid var(--orange);outline-offset:1px}
+
+/* Unidades (template "unidades") */
+.unit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-bottom:1.6rem}
+.unit-card{background:#fff;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--gray-20)}
+.unit-card img{width:100%;height:170px;object-fit:cover}
+.unit-card .u-body{padding:1rem}
+.unit-card h3{font-family:var(--disp);text-transform:uppercase;color:var(--blue)}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
+.chip{background:var(--blue-light);color:var(--blue-dark);font-size:.82rem;
+  padding:.28rem .7rem;border-radius:99px;font-weight:500}
+
+/* =========================================================
+   RODAPÉ — IDÊNTICO EM TODAS AS PÁGINAS
+   ========================================================= */
+.site-footer{background:var(--blue-dark);color:#C7D3EC;margin-top:2rem}
+.footer-inner{max-width:1160px;margin:0 auto;padding:1.6rem 1.25rem;
+  display:flex;flex-wrap:wrap;align-items:center;gap:1rem;justify-content:space-between}
+.footer-inner .f-left{display:flex;align-items:center;gap:.8rem}
+.footer-inner .f-left img{height:34px;width:auto}
+.footer-inner .f-brand{font-family:var(--disp);text-transform:uppercase;font-weight:700;color:#fff;letter-spacing:.5px}
+.footer-inner small{color:var(--gray-40)}
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+@media(max-width:860px){
+  .grid.cols-3,.grid.cols-4{grid-template-columns:repeat(2,1fr)}
+  .unit-grid{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .nav-toggle{display:block}
+  .search{width:auto;flex:1}
+  .brand .b-sub{display:none}
+  .header-nav{display:none}
+  .header-nav.open{display:block}
+  .header-nav-inner{padding:.4rem .75rem}
+  .main-nav ul{flex-direction:column;gap:.1rem}
+  .main-nav a{border-bottom:none;border-left:3px solid transparent;border-radius:6px}
+  .main-nav a.active{border-left-color:var(--orange);border-bottom-color:transparent}
+  .grid.cols-2,.grid.cols-3,.grid.cols-4{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}

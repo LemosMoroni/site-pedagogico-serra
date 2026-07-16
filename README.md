@@ -1,103 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+Grupos:
 
-  <!-- ✏️ TODO 1: troque o título abaixo pelo nome da SUA página -->
-  <title>NOME DA SUA PÁGINA · Site Pedagógico — Serra Catarinense</title>
+1-
 
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="assets/favicon-32.png">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="estilo-comum.css">
-</head>
-<body>
+2-
 
-<!-- ============================================================= -->
-<!-- CABEÇALHO — NÃO ALTERE (só marque a SUA aba com class="active") -->
-<!-- ============================================================= -->
-<header class="site-header">
-  <div class="header-top">
-    <div class="header-top-inner">
-      <a class="brand" href="index.html">
-        <img src="assets/Logo-SENAI_EP.png" alt="Logo SENAI Educação Profissional">
-        <span>
-          <span class="b-title">Site Pedagógico</span><br>
-          <span class="b-sub">Serra Catarinense</span>
-        </span>
-      </a>
-      <form class="search" role="search" aria-label="Buscar no site">
-        <input type="search" name="q" placeholder="Buscar no site pedagógico…" aria-label="Termo de busca">
-        <button type="submit" aria-label="Buscar">🔍</button>
-      </form>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    </div>
-  </div>
-  <div class="header-nav">
-    <div class="header-nav-inner">
-      <nav class="main-nav" aria-label="Menu principal">
-        <ul>
-          <!-- ✏️ TODO 2: adicione class="active" NO SEU item do menu -->
-          <li><a href="index.html">Início</a></li>
-          <li><a href="g1-equipe.html">Equipe e Unidades</a></li>
-          <li><a href="g2-aprendizagem-industrial.html">Aprendizagem Industrial</a></li>
-          <li><a href="g3-cursos-tecnicos.html">Cursos Técnicos</a></li>
-          <li><a href="g4-materiais-apoio.html">Materiais de Apoio</a></li>
-          <li><a href="g5-cursos-profissionais.html">Cursos Profissionais</a></li>
-          <li><a href="g6-treinamentos.html">Treinamentos</a></li>
-          <li><a href="g7-ppps-regulamento.html">PPPs</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+3-
 
-<!-- ============================================================= -->
-<!-- CONTEÚDO DA PÁGINA — É AQUI QUE O SEU GRUPO TRABALHA           -->
-<!-- ============================================================= -->
-<main class="page">
+4-
 
-  <!-- ✏️ TODO 3: troque pelo caminho e título da sua página -->
-  <div class="crumb">Início › Nome da sua seção</div>
-  <h1 class="page-title">Nome da sua seção</h1>
-  <p class="page-lead">Escreva aqui uma frase curta explicando o que a página oferece.</p>
+5-
 
-  <!-- ✏️ TODO 4: monte o conteúdo usando UM dos modelos abaixo.
-       Copie o modelo que combina com a sua página a partir do
-       arquivo docs/ESPECIFICACAO-VISUAL.md (seção "Componentes").
-       Modelos disponíveis:
-         • Grade de cards  (cursos)      -> use <div class="grid cols-3"> + .course-card
-         • Lista de links  (materiais)   -> use .link-block + .link-list
-         • Unidades        (equipe)      -> use .unit-grid + .unit-card
-  -->
+6-
 
-  <div class="section-h">Título de uma seção</div>
-  <p>Comece a construir aqui. Lembre-se:</p>
-  <ul style="margin:.6rem 0 0 1.2rem;color:var(--gray-60)">
-    <li>Imagens vão na pasta <code>img/</code> e SEMPRE com <code>alt</code> descritivo.</li>
-    <li>O texto do link deve dizer para onde ele leva (nada de "clique aqui").</li>
-    <li>Use as classes do <code>estilo-comum.css</code> — não invente cores nem fontes.</li>
-  </ul>
-
-</main>
-
-<!-- ============================================================= -->
-<!-- RODAPÉ — NÃO ALTERE                                            -->
-<!-- ============================================================= -->
-<footer class="site-footer">
-  <div class="footer-inner">
-    <span class="f-left">
-      <img src="assets/Logo-S.png" alt="Logo SENAI">
-      <span class="f-brand">SENAI · Serra Catarinense</span>
-    </span>
-    <small>Site Pedagógico · Refatoração da turma de Desenvolvimento de Sistemas — SENAI Lages</small>
-  </div>
-</footer>
-
-<script src="menu.js"></script>
-</body>
-</html>
+7-
