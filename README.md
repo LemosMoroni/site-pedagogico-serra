@@ -119,7 +119,7 @@ Detalhes completos no **Guia de Cores**.
 | Grupo | Integrantes |
 |---|---|
 | 1 | |
-| 2 | Gabriel, Paulo e João |
+| 2 | Gabriel, Paulo e João Gustavo |
 | 3 | |
 | 4 | |
 | 5 | |
