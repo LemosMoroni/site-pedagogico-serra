@@ -16,6 +16,7 @@ Ao final, todas as branches são validadas e unidas na `main` pelo professor.
 |---|---|
 | 📘 **Guia do Aluno** (passo a passo completo) | [https://drive.google.com/file/d/1fj6kp8r1Ja2oi5KQ65RvJkyI5GOf9yet/view?usp=sharing] |
 | 🎨 **Guia de Cores** (paleta, fontes e logos) | [https://drive.google.com/file/d/1IVfBrBmgnKZSkpMi6XgoThBdbB8z0Rqm/view?usp=sharing] |
+| 🌍 **Site Modelo**  | [https://www.figma.com/make/7WMJcV3R83Y9kJAaL9B2hs/Warframe---SITE-SENAI?code-node-id=0-6&p=f&t=noRBZgn16Bi5hDfY-0&fullscreen=1] |
 
 ---
 
